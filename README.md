@@ -7,5 +7,8 @@ This registration form allows you to create a secure account to access our crypt
 * PHP
 * Dockerfile
 
+### Responsive Design:
+The website is optimized to provide an optimal viewing experience across a variety of screen sizes, ranging from small mobile devices to large desktop screens.
+
 
 ![](https://github.com/Bilallamrani/Register-Form/blob/main/application/source/image/Screenshot%20form.jpg?raw=true)
