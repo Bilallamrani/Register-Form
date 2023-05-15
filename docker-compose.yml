@@ -5,7 +5,7 @@ services:
   server:
     build:
       context: ./application
-    container_name: becode-webserver
+    container_name: form-webserver
     ports:
       - 80:80
     restart: always
@@ -14,25 +14,25 @@ services:
     env_file:
       - ./docker.env
     networks:
-      - becode
+      - form
 
   ## Mariadb service 
   database:
     image: mariadb:10.4.2
-    container_name: becode-database
+    container_name: form-database
     restart: always
     volumes:
       - ./database:/docker-entrypoint-initdb.d/
-      - becode_data:/var/lib/mysql
+      - form_data:/var/lib/mysql
     env_file:
       - ./docker.env
     networks:
-      - becode
+      - form
 
   ## PhpMyAdmin
   myadmin:
     image: phpmyadmin/phpmyadmin:4.8.1
-    container_name: becode-phpmyadmin
+    container_name: form-phpmyadmin
     ports:
       - 8081:80
     restart: always
@@ -41,10 +41,10 @@ services:
     depends_on:
       - database
     networks:
-      - becode
+      - form
 
 networks:
-  becode:
+  form:
 
 volumes:
-  becode_data:
+  form_data:
