@@ -11,7 +11,7 @@
 
 <?php
 
-$bg_image = "/Form/image/img3.jpg";
+$bg_image = "/image/img3.jpg";
 // $page3 = "/Form/form.php";
 
 ?>
@@ -41,7 +41,7 @@ $bg_image = "/Form/image/img3.jpg";
 <div class="container">
     <div class="row">
         <div class = "col-sm-6 col-md-6 col-lg-6 pr-2 justify-content-start">
-            <?php $image1 = "/Form/image/img2.webp";?>
+            <?php $image1 = "/image/img2.webp";?>
                 <img src= "<?php echo $image1; ?>" alt="image" class="img-fluid enlarged-image">
         </div>
         <!-- <div class="col-sm-6 col-md-2 col-lg-2"></div> -->
@@ -142,6 +142,10 @@ echo' <style>
   
 h1{
     color:white;
+}
+
+.btn{
+    background-color: #114643;
 }
 
 </style>';
